@@ -9,3 +9,11 @@ div.container {
     align-items: center;
     flex-direction: column;
 }
+
+h1.title {
+    font-size: 100px;
+}
+
+h3.slogan {
+    font-size: 45px;
+}
