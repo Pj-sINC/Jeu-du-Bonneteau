@@ -1,7 +1,8 @@
 body {
     background-color: #483D8B;
     color: white;
-    margin: 10px;
+    margin: 20px;
+    line-height: 2px;
 }
 
 div {
@@ -14,6 +15,7 @@ div.container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
 }
 
 h1.title {
@@ -35,6 +37,7 @@ div.cards {
 }
 
 div.card {
+    transition: 1s;
     width: 200px;
     height: 300px;
     margin: 10px;
@@ -48,7 +51,7 @@ div.card {
 }
 
 .front {
-    background: url(../img/red.png) no-repeat;
+    background: url(../img/black.png) no-repeat;
     background-size: 200px;
 }
 
