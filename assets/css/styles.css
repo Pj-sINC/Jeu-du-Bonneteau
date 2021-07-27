@@ -1,6 +1,7 @@
 body {
     background-color: #483D8B;
     color: white;
+    margin: 10px;
 }
 
 div {
@@ -29,18 +30,27 @@ div.cards {
     align-items: center;
     width: 100%;
     height: 100%;
+    margin: 10%;
+}
+
+div.card {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
 }
 
 .front, .back {
     position: absolute;
     backface-visibility: hidden;
-    background-size: 200px;
+    height: 300px;
 }
 
 .front {
-    background: url(../img/red.png);
+    background: url(../img/red.png) no-repeat;
+    background-size: 200px;
 }
 
 .back {
-    background: url(../img/dos.png);
+    background: url(../img/dos.png) no-repeat;
+    background-size: 200px;
 }
