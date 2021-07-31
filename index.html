@@ -1,39 +1,47 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
+    <!-- Tete de la page qui contient les métadonnées -->
+    <head>
+        <title>Jeu du bonneteau</title>
+        <!-- lier la page html avec la feuille de styles css -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    </head>
+    <!-- Corp de la page -->
+    <body>
+        <div class="container">
+            <h1 class="titre">Bonneteau</h1>
+            <h3 class="slogan">La carte rouge gagne et les cartes noires perdent</h3>
 
-<!-- métadonnés / lien avec les assets -->
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/css/styles.css">
-	<script src="./assets/js/script.js"></script>
-	<title>Jeu du Bonneteau en ligne</title>
-</head>
-<!-- corps de la page -->
-<body>
-	<div class="container">
-		<h1 class="title">Bonneteau</h1>
-		<h3 class="slogan">Les cartes noires perdent et la carte rouge gagne !</h3>
+            <!-- toutes les cartes -->
+            <div class="cards">
+                <div class="card" onclick="flip(event)">
+                    <!-- image de la carte rouge -->
+                    <div class="front">
+                        <img class="card-img" src="./assets/img/black.png" width="200">
+                    </div>
+                    <div class="back"></div>
+                </div>
+                <div class="card" onclick="flip(event)">
+                    <!-- image de la carte rouge -->
+                    <div class="front">
+                        <img class="card-img" src="./assets/img/black.png" width="200">
+                    </div>
+                    <div class="back"></div>
+                </div>
+                <div class="card" onclick="flip(event)">
+                    <!-- image de la carte rouge -->
+                    <div class="front">
+                        <img class="card-img" src="./assets/img/black.png" width="200">
+                    </div>
+                    <div class="back"></div>
+                </div>
+            </div>
 
-		<!-- toutes les cartes -->
-		<div class="cards">
-			<div class="card" onclick="flip(event)">
-				<!-- image carte rouge -->
-				<div class="front"></div>
-				<div class="back"></div>
-			</div>
-			<div class="card" onclick="flip(event)">
-				<!-- image carte rouge -->
-				<div class="front"></div>
-				<div class="back"></div>
-			</div>
-			<div class="card" onclick="flip(event)">
-				<!-- image carte rouge -->
-				<div class="front"></div>
-				<div class="back"></div>
-			</div>
-		</div>
-	</div>
-</body>
+            <!-- un bouton generer -->
+            <button id="btn">Générer</button>
+        </div>
+
+        <!-- script javascript -->
+        <script src="./assets/js/script.js"></script>
+    </body>
 </html>
